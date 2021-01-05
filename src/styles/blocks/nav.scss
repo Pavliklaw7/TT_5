@@ -1,0 +1,28 @@
+.nav {
+  padding-bottom: 2.8rem;
+
+  &__list {
+    list-style: none;
+
+    &-item {
+      font-weight: 300;
+      font-size: 1.4rem;
+      line-height: 19px;
+    }
+
+    &-title {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 27px;
+    }
+
+    &-link {
+      color: #fff;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+}

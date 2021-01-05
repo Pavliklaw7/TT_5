@@ -1,0 +1,12 @@
+.offer {
+  color: #fff;
+
+  &__title {
+    color: $advertisements-font-color;
+    font-size: 2.4rem;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+  }
+}

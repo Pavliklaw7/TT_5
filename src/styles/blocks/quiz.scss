@@ -1,0 +1,20 @@
+.quiz {
+  padding: 8rem;
+  background: linear-gradient(0deg, #5e19ce 0%, #4021d6 100%);
+  mix-blend-mode: darken;
+
+  &__form {
+    max-width: 700px;
+  }
+
+  &__title {
+    margin: 0 auto 4rem;
+    text-align: center;
+    color: #fff;
+    max-width: 32rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+}

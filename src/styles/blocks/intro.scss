@@ -1,0 +1,22 @@
+.intro {
+  background: url(./../images/intro.png);
+
+  &__wrapper {
+    padding: 130px 15%;
+    color: #fff;
+  }
+
+  &__title {
+    font-size: 6.2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    font-size: 2.4rem;
+    margin-bottom: 5rem;
+  }
+
+  &__offer {
+    margin-bottom: 5rem;
+  }
+}

@@ -2,12 +2,310 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Test Task #5</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="./styles/styles.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <main class="main"> <!-- main -->
+      <section class="intro container-fluid">  <!-- intro -->
+        <div class="intro__wrapper row">
+          <div class="intro__inner col-sm">
+            <h1 class="intro__title">Tradenet Plus </h1>
+            <p class="intro__text">One month access to Tradenet day trading chat room and demo training account</p>
+            <div class="offer intro__offer">  <!-- offer -->
+              <h2 class="offer__title">FOR FREE!</h2>
+              <p class="offer__text">Limited time offer</p>
+            </div> <!-- offer -->
+            <a href="#" class="button intro__button">GET NOW</a>
+          </div>
+          <img
+            src="./images/intro__image.png"
+            alt="intro background"
+            class="intro__image col-sm"
+          >
+        </div>
+      </section> <!-- intro -->
+      <section class="about container-fluid">  <!-- about -->
+        <div class="about__wrapper row">
+          <img
+            src="./images/about.png"
+            alt="about image"
+            class="about__image col-sm-7"
+          >
+          <div class="about__inner col-sm">
+            <h2 class="about__title">
+              Boost your day trading experience with Tradenet  Plus
+            </h2>
+            <ol class="about__list">
+              <li class="about__list-item">
+                Get your hands-on day trading experience with a simulated demo account without risking any money
+              </li>
+              <li class="about__list-item">
+                Take your first trading steps in a safe environment and follow trades by experienced day traders in the chat room
+              </li>
+              <li class="about__list-item">
+                Ask your questions and get feedback from top traders
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>  <!-- about -->
+      <section class="advantages container">  <!-- advantages -->
+        <div class="advantages__wrapper">
+          <h3 class="advantages__title">Tradenet Plus </h3>
+          <div class="advantages__inner row justify-content-center">
+            <div class="advantages__card col">
+              <h2 class="advantages__card-title">Simulated Demo Account</h2>
+              <ul class="advantages__list">
+                <li class="advantages__list-item">$80,000 training account</li>
+                <li class="advantages__list-item">Maximum drawdown $4,000</li>
+                <li class="advantages__list-item">MTS included</li>
+                <li class="advantages__list-item">One month access</li>
+              </ul>
+              <img
+                src="./images/macbook-left-side.png"
+                alt="macbook left side"
+                class="advantages__card-image"
+              >
+            </div>
+            <div class="advantages__card col">
+              <h2 class="advantages__card-title">Live Trading Chat Room</h2>
+              <ul class="advantages__list">
+                <li class="advantages__list-item">Live every trading day</li>
+                <li class="advantages__list-item">Watch and follow trades by top traders</li>
+                <li class="advantages__list-item">Ask your questions and get detailed answers</li>
+                <li class="advantages__list-item">One month access</li>
+              </ul>
+              <img
+                src="./images/macbook-right-side.png"
+                alt="macbook right side"
+                class="advantages__card-image"
+              >
+            </div>
+          </div>
+          <div class="offer advantages__offer">
+            <h2 class="offer__title">FOR FREE!</h2>
+            <p class="offer__text">Limited time offer</p>
+          </div>
+        </div>
+      </section>
+      <section class="quiz container-fluid"> <!-- quiz -->
+        <h2 class="quiz__title">GET YOUR Tradenet Simulator Now!</h2>
+        <form
+          action="#"
+          class="form quiz__form container"
+          method="POST"
+        >
+          <p class="form__warning row">
+              Make sure your details are entered accurately
+              Tradenet will reject any incorrectly filled applications
+          </p>
+          <fieldset class="form__fieldset">
+            <div class="row form__row justify-content-center"> <!-- row -->
+              <div class="col">
+                <input
+                  type="text"
+                  class="form__input is-valid"
+                  id="validationServer01"
+                  placeholder="Name"
+                  required
+                >
+              </div>
+              <div class="col">
+                <select
+                  class="form__select form-select is-invalid"
+                  aria-describedby="validationServer04Feedback"
+                  required>
+                  <option selected disabled>County</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+            <div class="row form__row justify-content-center">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form__input is-valid"
+                  placeholder="Email"
+                  required
+                >
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form__input is-valid"
+                  placeholder="Phone"
+                  required
+                >
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="form__check form-check col">
+                <input
+                  class="form__check-input form-check-input"
+                  type="checkbox"
+                  id="invalidCheck"
+                  required
+                >
+                <label class="form__label form-check-label" for="invalidCheck">
+                  I consent to receive promotional materials from time to time. I, hereby declare that I have read, understood and accepted the
+                  <a  class="form__check-link" href="#">Company‘s Terms Conditions </a>
+                  <span>|</span>
+                  <a class="form__check-link" href="#">Privacy policy and cookie policy</a>
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section> <!-- quiz -->
+      <section class="article container-fluid">
+        <p class="article__text">
+          Tradenet is exclusively a day trading education operation. As such, Tradenet often provides past day trading results. Those do not indicate future expectations, results or performance, and do not warrant or guarantee similar results by you or another. Meir Barak’s and others’ trading successes, along with those of other Tradenet mentors and traders who appear on testimonials are abnormal and do not represent the outcome for most day traders’ efforts. The day trading efforts for the majority of day traders will not be profitable. Research indicates that under 10% of day traders succeed consistently. Contact us for reference.
+        </p>
+      </section>
+      <footer class="footer container-fluid">
+        <div class="footer__wrapper container">
+          <nav class="footer__nav nav row">  <!-- nav -->
+            <div class="nav__item col">  <!-- nav__item -->
+              <h3 class="nav__list-title">Education</h3>
+              <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Self-study course</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Star trader course</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Top trader course</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Mentorship Program</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Global markets course</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__item col">  <!-- nav__item -->
+              <h3 class="nav__list-title">About</h3>
+              <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">About us</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">About Meir Barak</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Meet Our Team</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Refer A Friend</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__item col">  <!-- nav__item -->
+              <h3 class="nav__list-title">Contacts</h3>
+              <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">info@tradenet.com</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">+1-516-210-4148</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Tradenet Capital Markets Ltd.</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__item col">  <!-- nav__item -->
+              <h3 class="nav__list-title">Trading Chat Room</h3>
+              <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Live Trading Room</a>
+                </li>
+              </ul>
+            </div>
+            <div class="follow-us nav__item">
+              <a href="#" class="follow-us__item">
+                <img
+                  src="./images/follow-us/youtube.png"
+                  alt="youtube"
+                  class="follow-us__image"
+                >
+              </a>
+              <a href="#" class="follow-us__item">
+                <img
+                  src="./images/follow-us/facebook.png"
+                  alt="facebook"
+                  class="follow-us__image"
+                >
+              </a>
+              <a href="#" class="follow-us__item">
+                <img
+                  src="./images/follow-us/instagram.png"
+                  alt="instagram"
+                  class="follow-us__image"
+                >
+              </a>
+              <a href="#" class="follow-us__item">
+                <img
+                  src="./images/follow-us/twitter.png"
+                  alt="twitter"
+                  class="follow-us__image"
+                >
+              </a>
+            </div>
+          </nav>
+          <hr class="footer__line">
+          <article class="footer__article">
+            <p class="footer__text">
+              Tradenet is a day trading training school. We offer courses including stock trading, CFDs, options, futures and foreign exchange. At Tradenet, we specialize in providing day trading courses with inexperienced beginners and experienced traders. We offer three learning options: self-taught online courses, so you can study at home network teaching there is a unique one-on-one teaching. We also offer online real-time discussion groups. Most of our services have several language options, including Spanish, German, French, Russian, Hungarian, Italian, Arabic, etc.
+            </p>
+            <p class="footer__text">
+              * Tradenet only provides educational services and will not be held liable for any disputes regarding the private investment firms. student acceptance to provide trading services remains at the sole discretion of the private investment firms. Buying a Tradenet education package does not guarantee access to a funded account. Tradenet provides a 14-day money back guarantee policy for students that were not accepted to trade a private investment firm funded account.
+            </p>
+          </article>
+          <div class="row">
+            <a href="#" class="footer__logo col">
+              <img src="./images/logo.png" alt="Logo">
+            </a>
+            <a href="#" class="footer__policy">Terms of Use</a>
+            <a href="#" class="footer__policy">Privacy Policy</a>
+          </div>
+        </div>
+      </footer>
+    </main>  <!-- main -->
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+    >
+    </script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+    >
+    </script>
+    <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+    >
+    </script>
   </body>
 </html>

@@ -1,0 +1,9 @@
+.article {
+  background-color: $article-bgc;
+  padding: 4rem 10%;
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+}

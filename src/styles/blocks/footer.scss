@@ -1,0 +1,28 @@
+.footer {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+  background-color: $footer-bgc;
+  color: #fff;
+
+  &__nav {
+    // margin-bottom: 5rem;
+  }
+
+  &__article {
+    margin-bottom: 5rem;
+  }
+
+  &__line {
+    margin-bottom: 5rem;
+    background-color: #fff;
+  }
+
+  &__policy {
+    color: #fff;
+    margin-right: 2rem;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
