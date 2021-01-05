@@ -30,6 +30,11 @@
       right: 0;
     }
 
+    &__list {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
     &:nth-child(2) {
       & .advantages__list,
       .advantages__card-title {
@@ -50,11 +55,6 @@
         color: $advantages-card-bg;
       }
     }
-  }
-
-  &__list {
-    font-size: 2rem;
-    font-weight: 300;
   }
 
   &__offer {
