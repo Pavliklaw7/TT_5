@@ -1,0 +1,116 @@
+.step-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  &__step {
+    position: relative;
+    bottom: 12px;
+    z-index: 1;
+  }
+
+  &__line {
+    position: absolute;
+    top: -35%;
+    background-color: #ababab;
+    height: 3px;
+    width: 80px;
+    transform: rotate(90deg);
+  }
+
+  &__circle {
+    position: relative;
+    top: 3.6rem;
+    left: -12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-bottom: 18px;
+
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i})::before {
+        content: "";
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 50%;
+      border: 3px solid #ababab;
+      background-color: transparent;
+    }
+  }
+
+  &__item--active {
+    color: #fff;
+
+    .step-info__line {
+      background-color: $question-hilight;
+    }
+    & > .step-info__circle {
+      &::before {
+        background-color: $question-hilight;
+        border-color: $question-hilight;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    &:first-child > .step-info__line {
+      display: none;
+    }
+  }
+
+  &__item--used {
+    color: #000;
+
+    & > .page-switcher__circle {
+      &::before {
+        background-color: #000;
+      }
+    }
+
+    &:nth-child(2) .page-switcher__line {
+      display: block;
+    }
+  }
+
+  &__item:nth-child(3) > .page-switcher__line {
+    width: 203px;
+  }
+}
+
+@media (max-width: 650px) {
+  .page-switcher {
+    &__item:nth-child(2) {
+      margin: 0 50px;
+    }
+
+    &__line {
+      width: 90px;
+    }
+
+    &__item:nth-child(3) > .page-switcher__line {
+      width: 105px;
+    }
+  }
+}

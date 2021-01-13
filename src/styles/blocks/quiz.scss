@@ -1,7 +1,8 @@
 .quiz {
-  padding: 8rem;
   background: linear-gradient(0deg, #5e19ce 0%, #4021d6 100%);
   mix-blend-mode: darken;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
 
   &__form {
     max-width: 700px;
@@ -16,5 +17,26 @@
     font-weight: 700;
     line-height: 32px;
     text-transform: uppercase;
+  }
+
+  &__form-wrapper.hidden,
+  &__initiate-quiz-wrapper.hidden {
+    display: none;
+  }
+
+  &__download {
+    margin: 0 auto 4rem;
+  }
+
+  &__start-the-quiz {
+    margin-bottom: 30rem;
+
+    @media (max-width: 385px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__question {
+    margin: 0 auto;
   }
 }

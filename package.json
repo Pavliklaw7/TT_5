@@ -43,6 +43,7 @@
   "dependencies": {
     "bootstrap": "^4.5.3",
     "intl-tel-input": "^17.0.8",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "request": "^2.88.2"
   }
 }

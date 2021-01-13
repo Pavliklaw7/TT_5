@@ -21,10 +21,7 @@
     border: 1px solid #dadada;
     box-sizing: border-box;
     border-radius: 10px;
-  }
-
-  &__row {
-    margin-bottom: 2.4rem;
+    margin-bottom: 2rem;
   }
 
   &__label {
@@ -59,6 +56,20 @@
       & + span {
         color: #000;
       }
+    }
+  }
+
+  &__submit {
+    background: #ff844f;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: #fff;
+    border: navajowhite;
+
+    @media (min-width: 768px) {
+      visibility: hidden;
     }
   }
 }

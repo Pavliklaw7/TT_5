@@ -8,8 +8,17 @@
   &__inner {
     position: relative;
     display: flex;
-    gap: 7rem;
     margin-bottom: 7rem;
+  }
+
+  &__list {
+    font-weight: 300;
+    max-width: 200px;
+    margin-bottom: 2rem;
+
+    &-item {
+      font-size: 2.2rem;
+    }
   }
 
   &__card {
@@ -19,41 +28,57 @@
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 
+    &-content:last-child {
+      @media (min-width: 768px) {
+        display: none;
+      }
+
+      .advantages__list {
+        max-width: 100%;
+      }
+    }
+
     &-title {
-      font-size: 2.4rem;
+      font-size: 3rem;
       margin-bottom: 1.5rem;
     }
 
     &-image {
       position: absolute;
-      top: 15%;
+      top: 12%;
       right: 0;
+      width: 100px;
+
+      @media (min-width: 768px) {
+        top: 30%;
+      }
     }
 
-    &__list {
-      font-size: 2rem;
-      font-weight: 300;
-    }
-
-    &:nth-child(2) {
-      & .advantages__list,
-      .advantages__card-title {
-        margin-left: 140px;
+    &:nth-child(3) {
+      & .advantages__list {
+        margin-left: 100px;
       }
 
       & .advantages__card-image {
+        top: 35%;
         left: 0;
-      }
 
-      &::before {
-        content: "+";
-        position: absolute;
-        top: 110px;
-        left: -50px;
-        font-size: 4.8rem;
-        font-weight: 700;
-        color: $advantages-card-bg;
+        @media (min-width: 768px) {
+          top: 30%;
+        }
       }
+    }
+  }
+
+  &__plus {
+    font-size: 10rem;
+    font-weight: 700;
+    color: $advantages-card-bg;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      position: relative;
+      right: 5px;
     }
   }
 
@@ -62,5 +87,24 @@
     width: fit-content;
     color: #333;
     margin-bottom: 8rem;
+
+    &-title {
+      font-size: 5rem;
+    }
+
+    &-text {
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+
+  &__line {
+    width: 90%;
+    margin-bottom: 2rem;
+    background-color: #fff;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }

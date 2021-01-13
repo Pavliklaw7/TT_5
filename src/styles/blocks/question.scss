@@ -1,0 +1,48 @@
+.question {
+  padding: 4rem 12rem;
+  background: #fff;
+  box-shadow: 0 4px 90px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  &__counter {
+    margin-bottom: 2rem;
+    color: #ababab;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 6rem;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  &__step-info {
+    position: absolute;
+    top: -2rem;
+    left: -6.5rem;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+    svg:hover > path {
+      fill: $question-hilight;
+    }
+  }
+
+  &__answer {
+    margin: 0 2rem 2rem 0;
+    height: 192px;
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

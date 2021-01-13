@@ -1,0 +1,36 @@
+.promo {
+  padding: 4rem 3.5rem;
+  background: #fff;
+  box-shadow: 0 4px 90px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  &__title {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 38px;
+    text-align: left;
+  }
+
+  &__text {
+    margin: 0 0 4rem;
+    max-width: 500px;
+    font-size: 2.4rem;
+    // line-height: 28px;
+    text-align: left;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

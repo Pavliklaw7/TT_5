@@ -11,35 +11,47 @@
       crossorigin="anonymous"
     >
     <link rel="stylesheet" href="./styles/styles.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" >
+    <script
+      src="https://cdn.db-ip.com/js/dbip.js"
+	    data-api-key="p6bcac47ae71f0285cb6343d9697e56e41a2cb92"
+    >
+    </script>
+    <script
+      defer
+      type="text/javascript"
+      src="scripts/main.js"
+    >
+    </script>
   </head>
   <body>
-    <main class="main"> <!-- main -->
-      <section class="intro container-fluid">  <!-- intro -->
+    <main class="main">
+      <section class="intro container-fluid">
         <div class="intro__wrapper row">
-          <div class="intro__inner col-sm">
+          <div class="intro__inner col-12 col-md-6 order-2 order-md-1">
             <h1 class="intro__title">Tradenet Plus </h1>
             <p class="intro__text">One month access to Tradenet day trading chat room and demo training account</p>
-            <div class="offer intro__offer">  <!-- offer -->
+            <div class="offer intro__offer">
               <h2 class="offer__title">FOR FREE!</h2>
               <p class="offer__text">Limited time offer</p>
-            </div> <!-- offer -->
+            </div>
             <a href="#" class="button intro__button">GET NOW</a>
           </div>
           <img
             src="./images/intro__image.png"
             alt="intro background"
-            class="intro__image col-sm"
+            class="intro__image col-12 col-md-6 order-1 order-md-2"
           >
         </div>
-      </section> <!-- intro -->
-      <section class="about container-fluid">  <!-- about -->
-        <div class="about__wrapper row">
+      </section>
+      <section class="about container">
+        <div class="about__wrapper">
           <img
             src="./images/about.png"
             alt="about image"
-            class="about__image col-sm-7"
+            class="about__image"
           >
-          <div class="about__inner col-sm">
+          <div class="about__inner">
             <h2 class="about__title">
               Boost your day trading experience with Tradenet  Plus
             </h2>
@@ -56,26 +68,45 @@
             </ol>
           </div>
         </div>
-      </section>  <!-- about -->
-      <section class="advantages container">  <!-- advantages -->
+      </section>
+      <section class="advantages container">
         <div class="advantages__wrapper">
           <h3 class="advantages__title">Tradenet Plus </h3>
           <div class="advantages__inner row justify-content-center">
-            <div class="advantages__card col">
-              <h2 class="advantages__card-title">Simulated Demo Account</h2>
-              <ul class="advantages__list">
-                <li class="advantages__list-item">$80,000 training account</li>
-                <li class="advantages__list-item">Maximum drawdown $4,000</li>
-                <li class="advantages__list-item">MTS included</li>
-                <li class="advantages__list-item">One month access</li>
-              </ul>
-              <img
-                src="./images/macbook-left-side.png"
-                alt="macbook left side"
-                class="advantages__card-image"
-              >
+            <div class="advantages__card col-sm-12 col-md-5">
+              <div class="advantages__card-content">
+                <h2 class="advantages__card-title">Simulated Demo Account</h2>
+                <ul class="advantages__list">
+                  <li class="advantages__list-item">$80,000 training account</li>
+                  <li class="advantages__list-item">Maximum drawdown $4,000</li>
+                  <li class="advantages__list-item">MTS included</li>
+                  <li class="advantages__list-item">One month access</li>
+                </ul>
+                <img
+                  src="./images/macbook-left-side.png"
+                  alt="macbook left side"
+                  class="advantages__card-image"
+                >
+              </div>
+              <hr class="advantages__line col-md-2">
+              <div class="advantages__card-content">
+                <h2 class="advantages__card-title">How it works?</h2>
+                <ul class="advantages__list">
+                  <li class="advantages__list-item">You can lose up to $4,000 on the demo account</li>
+                  <li class="advantages__list-item">
+                    If you exceed the maximum loss, your account will be restored within a week.
+                  </li>
+                  <li class="advantages__list-item">
+                    You can restore your account unlimited number of times but only on a given weekday
+                  </li>
+                  <li class="advantages__list-item">
+                    With MTS included you will have full history and access to your trade statistics
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="advantages__card col">
+            <p class="advantages__plus col-sm-1">+</p>
+            <div class="advantages__card col-sm-12 col-md-5">
               <h2 class="advantages__card-title">Live Trading Chat Room</h2>
               <ul class="advantages__list">
                 <li class="advantages__list-item">Live every trading day</li>
@@ -91,92 +122,216 @@
             </div>
           </div>
           <div class="offer advantages__offer">
-            <h2 class="offer__title">FOR FREE!</h2>
-            <p class="offer__text">Limited time offer</p>
+            <h2 class="offer__title advantages__offer-title">FOR FREE!</h2>
+            <p class="offer__text advantages__offer-text">Limited time offer</p>
           </div>
         </div>
       </section>
-      <section class="quiz container-fluid"> <!-- quiz -->
-        <h2 class="quiz__title">GET YOUR Tradenet Simulator Now!</h2>
-        <form
-          action="#"
-          class="form quiz__form container"
-          method="POST"
-        >
-          <p class="form__warning row">
-              Make sure your details are entered accurately
-              Tradenet will reject any incorrectly filled applications
-          </p>
-          <fieldset class="form__fieldset">
-            <div class="row form__row justify-content-center"> <!-- row -->
-              <div class="col">
-                <input
-                  type="text"
-                  class="form__input is-valid"
-                  id="validationServer01"
-                  placeholder="Name"
-                  required
-                >
+      <section class="quiz container-fluid">
+        <div class="quiz__form-wrapper">
+          <h2 class="quiz__title">GET YOUR Tradenet Simulator Now!</h2>
+          <form
+            id="form"
+            class="form quiz__form container"
+            method="POST"
+          >
+            <p class="form__warning row">
+                Make sure your details are entered accurately
+                Tradenet will reject any incorrectly filled applications
+            </p>
+            <fieldset class="form__fieldset">
+              <div class="row form__row justify-content-center">
+                <div class="col-12 col-md-6">
+                  <input
+                    id="name"
+                    type="text"
+                    class="form__input is-valid"
+                    placeholder="Name"
+                    required
+                  >
+                </div>
+                <div class="col-12 col-md-6">
+                  <select
+                    id="country"
+                    class="form__select form-select is-invalid dbip-auto-select-country"
+                    required
+                  >
+                  </select>
+                </div>
               </div>
-              <div class="col">
-                <select
-                  class="form__select form-select is-invalid"
-                  aria-describedby="validationServer04Feedback"
-                  required>
-                  <option selected disabled>County</option>
-                  <option>...</option>
-                </select>
+              <div class="row form__row justify-content-center">
+                <div class="col-12 col-md-6">
+                  <input
+                    id="email"
+                    type="text"
+                    class="form__input is-valid"
+                    placeholder="Email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    required
+                  >
+                </div>
+                <div class="col-12 col-md-6">
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="form__input is-valid"
+                    placeholder="Phone"
+                    required
+                  >
+                </div>
               </div>
-            </div>
-            <div class="row form__row justify-content-center">
-              <div class="col">
-                <input
-                  type="text"
-                  class="form__input is-valid"
-                  placeholder="Email"
-                  required
-                >
+              <div class="row justify-content-center">
+                <div class="form__check form-check col">
+                  <input
+                    class="form__check-input form-check-input"
+                    type="checkbox"
+                    id="invalidCheck"
+                    required
+                  >
+                  <label class="form__label form-check-label" for="invalidCheck">
+                    I consent to receive promotional materials from time to time. I, hereby declare that I have read, understood and accepted the
+                    <a  class="form__check-link" href="#">Company‘s Terms Conditions </a>
+                    <span>|</span>
+                    <a class="form__check-link" href="#">Privacy policy and cookie policy</a>
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
               </div>
-              <div class="col">
-                <input
-                  type="text"
-                  class="form__input is-valid"
-                  placeholder="Phone"
-                  required
-                >
+              <button type="submit" class="form__submit">GET NOW</button>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="quiz__initiate-quiz-wrapper hidden">
+          <div class="download quiz__download">
+            <h3 class="download__title">Get Access To Tradenet Plus for Free</h3>
+            <div class="download__inner">
+              <div class="download__option">
+                <p class="download__option-name">Trading Platform</p>
+                <div class="download__option-row">
+                  <a
+                    href="#"
+                    class="download__link"
+                  >
+                    Download for
+                    <img
+                      src="./images/download/win.png"
+                      alt=""
+                      class="download__link-image"
+                    >
+                  </a>
+                  <a
+                    href="#"
+                    class="download__link"
+                  >
+                    Download for
+                    <img
+                      src="./images/download/mac.svg"
+                      alt=""
+                      class="download__link-image"
+                    >
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="form__check form-check col">
-                <input
-                  class="form__check-input form-check-input"
-                  type="checkbox"
-                  id="invalidCheck"
-                  required
-                >
-                <label class="form__label form-check-label" for="invalidCheck">
-                  I consent to receive promotional materials from time to time. I, hereby declare that I have read, understood and accepted the
-                  <a  class="form__check-link" href="#">Company‘s Terms Conditions </a>
-                  <span>|</span>
-                  <a class="form__check-link" href="#">Privacy policy and cookie policy</a>
-                </label>
-                <div class="invalid-feedback">
-                  You must agree before submitting.
+              <div class="download__option">
+                <p class="download__option-name">Trading Room</p>
+                <div class="download__option-row">
+                  <a
+                    href="#"
+                    class="download__link"
+                  >
+                    Access Webinato
+                  </a>
                 </div>
               </div>
             </div>
-          </fieldset>
-        </form>
-      </section> <!-- quiz -->
-      <section class="article container-fluid">
-        <p class="article__text">
+          </div>
+          <div class="start-the-quiz quiz__start-the-quiz">
+            <h4 class="start-the-quiz__title">Let’s start our journey with Tradenet </h4>
+            <p class="start-the-quiz__subtitle">How do ordinary people become day traders?</p>
+            <button type="button" class="start-the-quiz__button">Take THE quiz</button>
+          </div>
+        </div>
+
+        <div class="question quiz__question-wrapper hidden">
+          <p class="question__counter"></p>
+          <h4 class="question__title"></h4>
+
+          <div class="question__wrapper">
+            <div class="step-info question__step-info">
+              <div class="step-info__item step-info__item--active">
+                <div class="step-info__line"></div>
+                <div class="step-info__circle"></div>
+                <p class="step-info__step">1</p>
+              </div>
+              <div class="step-info__item">
+                <div class="step-info__line"></div>
+                <div class="step-info__circle"></div>
+                <p class="step-info__step">2</p>
+              </div>
+              <div class="step-info__item">
+                <div class="step-info__line"></div>
+                <div class="step-info__circle"></div>
+                <p class="step-info__step">3</p>
+              </div>
+              <div class="step-info__item">
+                <div class="step-info__line"></div>
+                <div class="step-info__circle"></div>
+                <p class="step-info__step">4</p>
+              </div>
+            </div>
+            <div class="question__inner"></div>
+          </div>
+        </div>
+
+        <div class="promo hidden">
+          <h4 class="promo__title">That’s it! </h4>
+          <p class="promo__text">
+            These are the solutions that we would like to
+            suggest to you according to your answers
+          </p>
+          <div class="promo__inner row">
+            <a href="#" class="promo__item col-12 col-md-4">
+              <img
+                src="./images/promo/free-course_mob.png"
+                srcset="./images/promo/free-course_mob.png 251w,
+                ./images/promo/Free-course.png 250w"
+                alt="Free Course"
+                class="promo__image"
+              >
+            </a>
+            <a href="#" class="promo__item col-12 col-md-4">
+              <img
+                src="./images/promo/trading_challenge_mob.png"
+                srcset="./images/promo/trading_challenge_mob.png 251w,
+                ./images/promo/trading-challenge.png 250w"
+                alt="Trading Challenge"
+                class="promo__image"
+              >
+            </a>
+            <a href="#" class="promo__item col-12 col-md-4">
+              <img
+                src="./images/promo/tradenet-stock_mob.png"
+                srcset="./images/promo/tradenet-stock_mob.png 251w,
+                ./images/promo/stock-talks.png 250w"
+                alt="Tradenet Stock Talks"
+                class="promo__image"
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="article container-fluid row">
+        <p class="article__text col-12">
           Tradenet is exclusively a day trading education operation. As such, Tradenet often provides past day trading results. Those do not indicate future expectations, results or performance, and do not warrant or guarantee similar results by you or another. Meir Barak’s and others’ trading successes, along with those of other Tradenet mentors and traders who appear on testimonials are abnormal and do not represent the outcome for most day traders’ efforts. The day trading efforts for the majority of day traders will not be profitable. Research indicates that under 10% of day traders succeed consistently. Contact us for reference.
         </p>
       </section>
       <footer class="footer container-fluid">
         <div class="footer__wrapper container">
-          <nav class="footer__nav nav row">  <!-- nav -->
-            <div class="nav__item col">  <!-- nav__item -->
+          <nav class="footer__nav nav row">
+            <div class="nav__item col-6 col-md-2">
               <h3 class="nav__list-title">Education</h3>
               <ul class="nav__list">
                 <li class="nav__list-item">
@@ -196,7 +351,7 @@
                 </li>
               </ul>
             </div>
-            <div class="nav__item col">  <!-- nav__item -->
+            <div class="nav__item col-6 col-md-2">
               <h3 class="nav__list-title">About</h3>
               <ul class="nav__list">
                 <li class="nav__list-item">
@@ -216,7 +371,21 @@
                 </li>
               </ul>
             </div>
-            <div class="nav__item col">  <!-- nav__item -->
+            <div class="nav__item col-6 col-md-2">
+              <h3 class="nav__list-title">Our Programs</h3>
+              <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Intro Package</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Expert Package</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Pro Package</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__item col-6 col-md-2">
               <h3 class="nav__list-title">Contacts</h3>
               <ul class="nav__list">
                 <li class="nav__list-item">
@@ -230,7 +399,7 @@
                 </li>
               </ul>
             </div>
-            <div class="nav__item col">  <!-- nav__item -->
+            <div class="nav__item col-6 col-md-2">
               <h3 class="nav__list-title">Trading Chat Room</h3>
               <ul class="nav__list">
                 <li class="nav__list-item">
@@ -238,7 +407,7 @@
                 </li>
               </ul>
             </div>
-            <div class="follow-us nav__item">
+            <div class="follow-us nav__item col-12 col-md-2">
               <a href="#" class="follow-us__item">
                 <img
                   src="./images/follow-us/youtube.png"
@@ -287,8 +456,9 @@
           </div>
         </div>
       </footer>
-    </main>  <!-- main -->
-    <script type="text/javascript" src="scripts/main.js"></script>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
