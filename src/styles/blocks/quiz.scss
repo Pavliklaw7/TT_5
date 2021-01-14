@@ -19,6 +19,11 @@
     text-transform: uppercase;
   }
 
+  &__initiate-quiz-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
   &__form-wrapper.hidden,
   &__initiate-quiz-wrapper.hidden {
     display: none;
@@ -30,13 +35,17 @@
 
   &__start-the-quiz {
     margin-bottom: 30rem;
-
-    @media (max-width: 385px) {
-      margin-bottom: 0;
-    }
   }
 
   &__question {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 385px) {
+  .quiz {
+    &__start-the-quiz {
+      margin-bottom: 0;
+    }
   }
 }

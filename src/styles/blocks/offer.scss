@@ -11,3 +11,15 @@
     font-size: 1.4rem;
   }
 }
+
+@media (max-width: 1800px) {
+  .offer {
+    &__title {
+      font-size: 3.6rem;
+    }
+
+    &__text {
+      font-size: 1.8rem;
+    }
+  }
+}

@@ -20,17 +20,10 @@ li {
 
 html {
   font-size: 45.5%;
+  font-family: "Rubik", "Roboto", Tahoma, Verdana, sans-serif;
 
   @media (min-width: 1400px) {
     font-size: 55.5%;
-  }
-
-  @media (min-width: 1800px) {
-    font-size: 65.5%;
-  }
-
-  @media (min-width: 1800px) {
-    font-size: 75.5%;
   }
 }
 

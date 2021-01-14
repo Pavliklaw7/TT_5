@@ -109,14 +109,14 @@ $(document).ready(function() {
 
   let currentQuestionIndex = 1;
 
-  const quizEnd = document.querySelector('.quiz-end');
+  const promoContainer = document.querySelector('.promo');
 
   function setNextQuestion() {
     $(`.step-info__item:nth-child(${currentQuestionIndex})`).addClass('step-info__item--active');
 
     if (currentQuestionIndex > questions.length) {
       questionWrapper.classList.add('hidden');
-      quizEnd.classList.remove('hidden');
+      promoContainer.classList.remove('hidden');
       postDataToServer();
     } else {
       showQuestion(questions[currentQuestionIndex - 1]);

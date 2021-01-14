@@ -67,8 +67,12 @@
     margin-top: 2rem;
     color: #fff;
     border: navajowhite;
+  }
+}
 
-    @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .form {
+    &__submit {
       visibility: hidden;
     }
   }

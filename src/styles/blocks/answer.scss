@@ -18,37 +18,3 @@
     transform: scale(1.1);
   }
 }
-
-/* $images: url(../../images/question_1/answer1.svg)
-  url(../../images/question_1/answer2.svg)
-  url(../../images/question_1/answer3.svg)
-  url(../../images/question_1/answer4.svg)
-  url(../../images/question_2/answer1.svg)
-  url(../../images/question_2/answer2.svg)
-  url(../../images/question_2/answer3.svg)
-  url(../../images/question_2/answer4.svg)
-  url(../../images/question_3/answer1.svg)
-  url(../../images/question_3/answer2.svg)
-  url(../../images/question_3/answer3.svg)
-  url(../../images/question_3/answer4.svg)
-  url(../../images/question_4/answer1.svg)
-  url(../../images/question_4/answer2.svg)
-  url(../../images/question_4/answer3.svg)
-  url(../../images/question_4/answer4.svg);
-
-@each $image in $images {
-  .answer:nth-child() {
-    .answer__image {
-      height: 10px;
-      width: 10px;
-      background-color: $default-text;
-      -webkit-mask-size: contain;
-      mask-size: contain;
-      -webkit-mask-position: center;
-      mask-position: center;
-      -webkit-mask-repeat: no-repeat;
-      mask-repeat: no-repeat;
-      mask-image: url($image);
-    }
-  }
-} */

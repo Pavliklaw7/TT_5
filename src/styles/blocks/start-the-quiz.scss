@@ -11,10 +11,6 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-
-    @media (max-width: 385px) {
-      margin-bottom: 2rem;
-    }
   }
 
   &__subtitle {
@@ -40,9 +36,15 @@
       transform: scale(1.2);
     }
   }
+}
 
-  @media (max-width: 385px) {
+@media (max-width: 385px) {
+  .start-the-quiz {
     border: none;
     text-align: center;
+
+    &__title {
+      margin-bottom: 2rem;
+    }
   }
 }

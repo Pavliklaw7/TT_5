@@ -29,10 +29,6 @@
     border-radius: 5px;
 
     &-content:last-child {
-      @media (min-width: 768px) {
-        display: none;
-      }
-
       .advantages__list {
         max-width: 100%;
       }
@@ -48,10 +44,6 @@
       top: 12%;
       right: 0;
       width: 100px;
-
-      @media (min-width: 768px) {
-        top: 30%;
-      }
     }
 
     &:nth-child(3) {
@@ -62,10 +54,6 @@
       & .advantages__card-image {
         top: 35%;
         left: 0;
-
-        @media (min-width: 768px) {
-          top: 30%;
-        }
       }
     }
   }
@@ -75,11 +63,6 @@
     font-weight: 700;
     color: $advantages-card-bg;
     text-align: center;
-
-    @media (min-width: 768px) {
-      position: relative;
-      right: 5px;
-    }
   }
 
   &__offer {
@@ -102,9 +85,34 @@
     width: 90%;
     margin-bottom: 2rem;
     background-color: #fff;
+  }
+}
 
-    @media (min-width: 768px) {
-      display: none;
+@media (min-width: 768px) {
+  .advantages {
+    &__card {
+      &-content:last-child {
+        display: none;
+      }
+
+      &-image {
+        top: 30%;
+      }
+
+      &:nth-child(3) {
+        & .advantages__card-image {
+          top: 30%;
+        }
+      }
     }
+  }
+
+  &__plus {
+    position: relative;
+    right: 5px;
+  }
+
+  &__line {
+    display: none;
   }
 }

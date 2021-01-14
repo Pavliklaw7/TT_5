@@ -64,8 +64,10 @@
       transform: scale(1.1);
     }
   }
+}
 
-  @media (max-width: 385px) {
+@media (max-width: 385px) {
+  .download {
     display: none;
   }
 }

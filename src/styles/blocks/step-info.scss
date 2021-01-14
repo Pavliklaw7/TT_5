@@ -114,3 +114,20 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .step-info {
+    &__line {
+      width: 135px;
+      top: -83%;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .step-info {
+    &__step {
+      bottom: 6px;
+    }
+  }
+}
