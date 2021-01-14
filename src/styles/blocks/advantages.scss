@@ -105,14 +105,14 @@
         }
       }
     }
-  }
 
-  &__plus {
-    position: relative;
-    right: 5px;
-  }
+    &__plus {
+      position: relative;
+      right: 5px;
+    }
 
-  &__line {
-    display: none;
+    &__line {
+      display: none;
+    }
   }
 }
